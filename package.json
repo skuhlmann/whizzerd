@@ -1,0 +1,21 @@
+{
+  "name": "style-wiz",
+  "version": "1.0.0",
+  "description": "Style Guider",
+  "main": "app.js",
+  "bin": {
+    "whizzer": "bin/whizzer.js"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Sam Kuhlmann",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "express": "^4.16.3",
+    "less": "^3.0.1",
+    "less-watch-compiler": "^1.11.0",
+    "nodemon": "^1.17.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "events": {
+    "start": "less-watch-compiler components components assets/main.less"
+  }
+}
