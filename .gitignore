@@ -10,3 +10,5 @@
 .scratch.js
 
 npm-debug.log*
+
+.vscode/
