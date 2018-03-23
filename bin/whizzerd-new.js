@@ -5,6 +5,7 @@ var path = require('path');
 
 const copyFile = require('../lib/copy-file');
 const replaceHtml = require('../lib/replace-html');
+const addRoute = require('../lib/add-route');
 
 const args = require('commander').parse(process.argv).args;
 
@@ -31,6 +32,7 @@ function whizzerNew(componentName) {
     console.log(`created ${componentName}`)
     
     replaceHtml(targetHtml, componentName);
+    addRoute(componentName);
   })
 
   //swap out component names in various places
