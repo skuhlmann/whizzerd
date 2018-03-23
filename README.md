@@ -8,4 +8,6 @@ Fire up a server on port 3000, recompile app and process less into css on code c
 
 `npm start`
 
+Generate component
 
+`whizzerd new <component name>`

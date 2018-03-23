@@ -4,7 +4,7 @@
   "description": "Style Guider",
   "main": "app.js",
   "bin": {
-    "whizzer": "bin/whizzer.js"
+    "whizzerd": "bin/whizzerd.js"
   },
   "scripts": {
     "start": "nodemon app.js"
