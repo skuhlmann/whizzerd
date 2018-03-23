@@ -4,8 +4,11 @@ var fs = require('fs');
 var path = require('path');
 
 const copyFile = require('../lib/copy-file');
-const replaceHtml = require('../lib/replace-html');
+// const replaceHtml = require('../lib/replace-html');
 const addRoute = require('../lib/add-route');
+const addLessImport = require('../lib/add-less-import');
+
+const { replaceHtml, addIndexLink } = require('../lib/replace-html');
 
 const args = require('commander').parse(process.argv).args;
 
@@ -27,17 +30,19 @@ if (fs.existsSync(targetHtml)) {
 
 whizzerNew(componentName);
 
+// function whizzerNew(componentName) {
+//   addIndexLink(componentName)
+
+// }
 function whizzerNew(componentName) {
   createFiles().then(res => {
     console.log(`created ${componentName}`)
     
     replaceHtml(targetHtml, componentName);
     addRoute(componentName);
+    addLessImport(componentName);
   })
 
-  //swap out component names in various places
-  // // html spots
-  // // add to routes
   // // add import to main.less
   // // 
 }
