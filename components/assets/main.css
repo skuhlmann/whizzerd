@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'RamaGothicE';
-  src: url('../common/fonts/RamaGothicE_SemiBold-webfont.woff') format('woff');
+  src: url('../../assets/fonts/RamaGothicE_SemiBold-webfont.woff') format('woff');
 }
 h1,
 h2,
