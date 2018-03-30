@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'RamaGothicE';
+  src: url('../common/fonts/RamaGothicE_SemiBold-webfont.woff') format('woff');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial Bold', sans-serif;
+  color: #54565B;
+  margin: 0;
+}
+.alt-heading {
+  font-family: 'RamaGothicE', Arial, sans-serif;
+  color: #91c717;
+}
+.alt-heading--green {
+  color: #91c717;
+}
+h1 {
+  font-size: 24pt;
+  text-transform: none;
+}
+h1.alt-heading {
+  font-size: 36pt;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 26pt;
+  text-transform: uppercase;
+}
+h2.alt-heading {
+  font-family: 'RamaGothicE', Arial, sans-serif;
+}
+h3 {
+  font-size: 18pt;
+}
+h3.alt-heading {
+  /* font-size: 26pt; */
+}
